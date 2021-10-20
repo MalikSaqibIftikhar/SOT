@@ -1,4 +1,4 @@
-# Upgradeable SOT NFT (ERC721 Token) & MSOT (ERC20 Token)
+# Upgradeable SOT NFT (ERC721 Token) 
 
 ## Introduction
 
@@ -7,8 +7,6 @@ This project includes the following:
 - [x] Upgradeable contracts - Implemented through UUPS upgradeable proxy pattern (OpenZeppelin Standard)
 
 - [x] SOT NFT (ERC721 Token) - Including the NFT's metadata implementation (both through IPFS and Cloud)
-
-- [x] MSOT (ERC20 Token)
 
 - [x] Scripts for deployment of contracts 
 

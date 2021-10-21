@@ -24,7 +24,9 @@ contract SOT is ERC721Upgradeable, UUPSUpgradeable, OwnableUpgradeable, Profit_D
         //setting the original owner
         originalOwner = _msgSender();
 
-        //Minting 1 token initially
+        //Minting 1.2 Million tokens at the time of deployment is very costly, So
+        //Minting 3 token initially, but total won't be greater than 1.2 Million
+        //also avoiding the for loop to get rid of any loop variables that the contract has to give space to
         mint(originalOwner);
         mint(originalOwner);
         mint(originalOwner);

@@ -1,5 +1,5 @@
 TN:
-SF:/home/saqib/Saqib/Solidity/First Project/SOT (copy2)/solidity-boilerplate-proxy-pattren/contracts/Migrations.sol
+SF:/home/saqib/Saqib/Solidity/First Project/new/SOT/contracts/Migrations.sol
 FN:8,restricted
 FN:16,setCompleted
 FNF:2
@@ -17,23 +17,7 @@ BRF:2
 BRH:1
 end_of_record
 TN:
-SF:/home/saqib/Saqib/Solidity/First Project/SOT (copy2)/solidity-boilerplate-proxy-pattren/contracts/MSOT.sol
-FN:12,initialize
-FN:18,_authorizeUpgrade
-FNF:2
-FNH:2
-FNDA:6,initialize
-FNDA:2,_authorizeUpgrade
-DA:13,6
-DA:14,6
-DA:15,6
-LF:3
-LH:3
-BRF:0
-BRH:0
-end_of_record
-TN:
-SF:/home/saqib/Saqib/Solidity/First Project/SOT (copy2)/solidity-boilerplate-proxy-pattren/contracts/Profit_Distributor.sol
+SF:/home/saqib/Saqib/Solidity/First Project/new/SOT/contracts/Profit_Distributor.sol
 FN:14,_distributeTxFee
 FN:25,_payFees
 FN:31,_payRoyaltyToPlatform
@@ -58,7 +42,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/saqib/Saqib/Solidity/First Project/SOT (copy2)/solidity-boilerplate-proxy-pattren/contracts/Rentor.sol
+SF:/home/saqib/Saqib/Solidity/First Project/new/SOT/contracts/Rentor.sol
 FN:10,initialize
 FN:14,_authorizeUpgrade
 FNF:2
@@ -72,19 +56,19 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/saqib/Saqib/Solidity/First Project/SOT (copy2)/solidity-boilerplate-proxy-pattren/contracts/SOT.sol
+SF:/home/saqib/Saqib/Solidity/First Project/new/SOT/contracts/SOT.sol
 FN:19,initialize
-FN:36,uint2str
-FN:59,tokenExists
-FN:64,_authorizeUpgrade
-FN:68,tokenURI
-FN:77,_baseURI
-FN:81,mint
-FN:91,burn
-FN:99,sellNFT
-FN:116,transferFrom
-FN:133,getCurrentTokenId
-FN:137,getTotalSupply
+FN:35,uint2str
+FN:58,tokenExists
+FN:63,_authorizeUpgrade
+FN:67,tokenURI
+FN:76,_baseURI
+FN:80,mint
+FN:90,burn
+FN:98,sellNFT
+FN:115,transferFrom
+FN:132,getCurrentTokenId
+FN:136,getTotalSupply
 FNF:12
 FNH:12
 FNDA:3,initialize
@@ -105,61 +89,80 @@ DA:25,3
 DA:28,3
 DA:29,3
 DA:30,3
-DA:37,3
-DA:38,2
+DA:36,3
+DA:37,2
+DA:39,1
 DA:40,1
 DA:41,1
-DA:42,1
+DA:42,6
 DA:43,6
-DA:44,6
+DA:45,1
 DA:46,1
 DA:47,1
-DA:48,1
+DA:48,6
 DA:49,6
 DA:50,6
 DA:51,6
 DA:52,6
-DA:53,6
-DA:55,1
-DA:60,2
-DA:61,1
-DA:70,1
-DA:72,1
-DA:78,1
-DA:83,10
-DA:85,10
+DA:54,1
+DA:59,2
+DA:60,1
+DA:69,1
+DA:71,1
+DA:77,1
+DA:82,10
+DA:84,10
+DA:86,10
 DA:87,10
-DA:88,10
+DA:92,1
 DA:93,1
-DA:94,1
+DA:107,1
 DA:108,1
 DA:109,1
 DA:110,1
-DA:111,1
-DA:113,1
-DA:121,2
+DA:112,1
+DA:120,2
+DA:126,2
 DA:127,2
-DA:128,2
-DA:130,2
-DA:134,4
-DA:138,5
+DA:129,2
+DA:133,4
+DA:137,5
 LF:44
 LH:44
-BRDA:37,1,0,2
-BRDA:37,1,1,1
-BRDA:60,2,0,1
-BRDA:60,2,1,1
-BRDA:83,3,0,10
-BRDA:83,3,1,0
-BRDA:121,4,0,2
-BRDA:121,4,1,0
-BRDA:127,5,0,2
-BRDA:127,5,1,0
+BRDA:36,1,0,2
+BRDA:36,1,1,1
+BRDA:59,2,0,1
+BRDA:59,2,1,1
+BRDA:82,3,0,10
+BRDA:82,3,1,0
+BRDA:120,4,0,2
+BRDA:120,4,1,0
+BRDA:126,5,0,2
+BRDA:126,5,1,0
 BRF:10
 BRH:7
 end_of_record
 TN:
-SF:/home/saqib/Saqib/Solidity/First Project/SOT (copy2)/solidity-boilerplate-proxy-pattren/contracts/tests/mockMSOT.sol
+SF:/home/saqib/Saqib/Solidity/First Project/new/SOT/contracts/tests/mockMSOT.sol
+FN:12,initialize
+FN:18,_authorizeUpgrade
+FN:23,version
+FNF:3
+FNH:3
+FNDA:6,initialize
+FNDA:2,_authorizeUpgrade
+FNDA:1,version
+DA:13,6
+DA:14,6
+DA:15,6
+DA:24,1
+LF:4
+LH:4
+BRF:0
+BRH:0
+end_of_record
+TN:
+SF:/home/saqib/Saqib/Solidity/First Project/new/SOT/contracts/tests/mockRentor.sol
 FN:7,version
 FNF:1
 FNH:1
@@ -171,19 +174,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/home/saqib/Saqib/Solidity/First Project/SOT (copy2)/solidity-boilerplate-proxy-pattren/contracts/tests/mockRentor.sol
-FN:7,version
-FNF:1
-FNH:1
-FNDA:1,version
-DA:8,1
-LF:1
-LH:1
-BRF:0
-BRH:0
-end_of_record
-TN:
-SF:/home/saqib/Saqib/Solidity/First Project/SOT (copy2)/solidity-boilerplate-proxy-pattren/contracts/tests/mockSOT.sol
+SF:/home/saqib/Saqib/Solidity/First Project/new/SOT/contracts/tests/mockSOT.sol
 FN:7,version
 FNF:1
 FNH:1

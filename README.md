@@ -4,15 +4,15 @@
 
 This project includes the following:
 
-- [x] Upgradeable contracts - Implemented through UUPS upgradeable proxy pattern (OpenZeppelin Standard)
+- [x] Upgradeable contract - Implemented through UUPS upgradeable proxy pattern (OpenZeppelin Standard)
 
 - [x] SOT NFT (ERC721 Token) - Including the NFT's metadata implementation (both through IPFS and Cloud)
 
-- [x] Scripts for deployment of contracts 
+- [x] Scripts for deployment of contract 
 
-- [x] Scripts for upgradation of contracts
+- [x] Scripts for upgradation of contract
 
-- [x] Script for minting a new token in a deployed instance
+- [x] Script for minting a new token in a deployed SOT instance
 
 - [x] Scripts for uploading NFT's images and metadata files on IPFS
 
@@ -33,7 +33,6 @@ To get started with this project, follow these steps:
         "key": "<Key to your metamask wallet account>",
         "urlRopsten": "https://speedy-nodes-nyc.moralis.io/<Project-Id>/eth/ropsten",
         "SOT_PROJECT_RINKEBY": "https://rinkeby.infura.io/v3/<SOT-Project-Id>",
-        "MSOT_PROJECT_RINKEBY": "https://rinkeby.infura.io/v3/<MSOT-Project-Id>",
         "wallet_address": "<Your metamask account address>",
         "deployedSotAddress": "<Once you deploy SOT, it will return an address, paste that here>",
         "deployedMsotAddress": "<Once you deploy MSOT, it will return an address, paste that here>"
@@ -64,7 +63,7 @@ To get started with this project, follow these steps:
 
 8. Run `npx hardhat run scripts/<script-name>.js` to run any of the scripts
 
-9. Run `npx hardhat run scripts/<script-name>.js --network rinkeby` to make transactions like, deployment, upgradation and minting on the testnet. Try running these scripts, but do remember that your testnet urls are stored in secret.json file that we just created, so make sure to use the right url in the rinkeby network configuration in your hardhat.config.json file. If you are **deploying the SOT**, the rinkeby configuration will look like this: 
+9. Run `npx hardhat run scripts/<script-name>.js --network rinkeby` to make transactions like, deployment, upgradation and minting on the testnet. Try running these scripts, but do remember that your rinkeby configuration in hardhat.config.js file will look like this: 
 
     ```
     rinkeby: {
@@ -78,21 +77,6 @@ To get started with this project, follow these steps:
    It should deploy the contract on the rinkeby testnet and return the address, paste that address in the deployedSotAddress in your secret.json file so that you can upgrade it later on.
 
     `npx hardhat run scripts/UpgradeSotProxy.js --network rinkeby`
-
-10. Now, to **deploy MSOT**, change your rinkeby configration in hardhat config as follows:
-
-    ```
-    rinkeby: {
-        url: secret.MSOT_PROJECT_RINKEBY, 
-        accounts: [secret.key] 
-    }
-    ```
-
-    `npx hardhat run scripts/DeployMsotProxy.js --network rinkeby`
-
-    It should deploy the contract on the rinkeby testnet and return the address, paste that address in the deployedMsotAddress in your secret.json file so that you can upgrade it later on.
-
-    `npx hardhat run scripts/UpgradeMsotProxy.js --network rinkeby`
 
 ## Adding Metadata and Minting a new SOT
 Each SOT NFT is supposed to possess specific attributes. Like the SOT's size, location etc. In addition to that, it also has an associated image and a name which differentiates it from other SOTs. Metadata is a json file consisting that information. Now,how is this metadata file associated with each SOT? Well, the metadata is always off-chain, so it can be stored either on another blockchain like IPFS or on some cloud service like cloudinary. We have used the cloudinary service to store our metadata files. The OpenSea platform access the tokenURI function of the NFT and looks for the metadata file in the link that is returned. like in our case, it returns 

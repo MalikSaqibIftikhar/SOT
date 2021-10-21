@@ -24,11 +24,10 @@ contract SOT is ERC721Upgradeable, UUPSUpgradeable, OwnableUpgradeable, Profit_D
         //setting the original owner
         originalOwner = _msgSender();
 
-        //Minting 5 tokens initially
+        //Minting 1 token initially
         mint(originalOwner);
         mint(originalOwner);
         mint(originalOwner);
-        
         
     }
 
